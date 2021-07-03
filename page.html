@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Image resizing</title>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Select File:</label><br><br>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+              </form>
+        </div>
+        <div class="column">
+            <canvas id="inputCanvas" ></canvas><br>
+            <form>
+                <div class="form-group">
+                  <label for="targetHeight">Target Height:</label>
+                  <input type="text" class="form-control" id="targetHeight" placeholder="Enter target height">
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="targetWidth">Target Width:</label>
+                  <input type="text" class="form-control" id="targetWidth" placeholder="Enter target width">
+                </div>
+                <br>
+                <div class="form-group">                    
+                    <button type="button" class="btn btn-primary">Resize</button>
+                  </div>
+              </form>
+        </div>
+        <div class="column">
+            <canvas id="outputCanvas" ></canvas><br>
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
+        </div>
+      </div>
+</body>
+</html>
